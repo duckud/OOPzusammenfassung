@@ -16,7 +16,10 @@
 - [Polymorphus](#polymorphus)
 - [UML Sequnezdiagramme](#uml-sequenzdiagramme)
 
+> Alle Inhlate sind vom Modul 320 von der BBB 
+
 ## Objekte
+Inhalt von: Files PR 4200-4201 und LA 4200-4202
 
 > Ein Objekt ist eine softwaretechnische Repräsentation eines realen oder erdachten, klar abgegrenzten Gegenstands oder Begriffs. Das Objekt erfasst alle Aspekte des Gegenstandes durch Attribute (=Eigenschaften) und Methoden.
 
@@ -25,6 +28,7 @@ Aus Klassen kann man einzelne Objekte erstellen.
 Bsp.: Wenn man die Klasse Auto hat mit den Attributen Farbe und Name kann man diese Klasse gebrauchen und daraus einen Objekt erstellen. Unser Objekt hat die Attributwerte für Name = Autoname und Farbe = Rot. Die vordefinierten Methoden sagen dann, was dieses Auto machen kann.
 
 ## Klassen
+Inhalt von: Files PR 4200-4201 und LA 4200-4202
 
 > Unter einer Klasse versteht man die softwaretechnische Beschreibung eines Bauplanes für ein Objekt. Aus einer Klasse können dann Objekte abgeleitet (gebildet, instanziiert) werden.
 
@@ -33,6 +37,7 @@ Bsp.: Klasse: Autos
 Diese Klasse beinhaltet Attribute wie Farbe und Name, sowie Methoden, also was das Auto überhaupt macht.
 
 ## Methoden
+Inhalt von: Files PR 4205 und LA 4206-4207
 
 > Methoden beschreiben die Operationen, die mit dem Objekt bzw. seinen Attributen durchgeführt werden können.
 
@@ -92,17 +97,18 @@ Gleich wie bei der Überladung von Konstruktoren können auch Methoden überlade
 Methodenname, Sichtbarkeitsmodifikator und Rückgabewert dürfen dabei nicht verändert werden, sondern sind immer gleich
 
 ## Attribute
-
+Inhalt von: Files PR 4200-4201 und LA 4200-4202
 > Attribute sind Eigenschaften des Objektes. Sie beschreiben den Gegenstand vollständig. Attribute sind geschützt gegen Manipulation von aussen (das nennt man Kapselung).
 
 In einer Klasse hat es Attribute, die bestimmen was diese Klasse genau ist. Mit dem bsp. mit dem Auto sind der Name und die Farbe des Autos Attribute. Die Attributenwerte ändern sich je nach Objekt. Also im bsp. mit dem Auto Objekt wäre der Attribut Farbe und der Attributenwert Rot.
 
 ## Klassen, Attribute, Methoden und Objekte im UML
+Inhalt von: Files PR 4200-4201 und LA 4200-4202
 
 ![](assets/20221101_194639_image.png)
 
 ## Instanzvariabeln
-
+Inhalt von: Files PR 4202 und LA 4203-4204
 > Instanzvariablen sind Variablen, welche eindeutig einer Instanz (= Objekt) zugeordnet sind und deren Gültigkeit auf
 > diese Instanz begrenzt ist.
 
@@ -230,6 +236,7 @@ public int GeldInPfund
 ```
 
 ## Attribute UML
+Inhalt von: Files PR 4200-4201 und LA 4200-4202
 
 * "+" = public
 * "-" = private
@@ -239,6 +246,7 @@ public int GeldInPfund
 ![](assets/20221101_211303_image.png)
 
 ## Kapselung
+Inhalt von: Files PR 4203 und LA 4213
 
 > Das Prinzip der Kapselung besagt, dass die Daten und Informationen vor dem Zugriff von aussen geschützt oder verborgen werden. Der direkte Zugriff wird auf den Member des Objektes verhindert. DatenStrukturen und Algorithmen innerhalb einer Klasse werden von ausserhalb "versteckt". Also: Die Klasse kümmert sich um das Speichern und um die Berechnungen. Stattdessen existiert eine definierte Schnittstelle (eng. Interface), welche die verschiedenen Zugriffsmöglichkeiten regelt.
 
@@ -274,6 +282,7 @@ Hauptsächlich verwenden wir public (können von anderen Objekten aufgerufen wer
 Daten werden vom Objekt selbst verwaltet und können nicht zugegriffen werden. Komplizierte Algorithmen etc. sind auch versteckt und brauchen nicht gekannt zu werden.
 
 ## Objekt Instanzierung und Konstruktoren
+Inhalt von: Files PR 4204 und LA 4205
 
 > Bei der Instanziierung wird aus der Vorlage (= der Klasse) eine neue Instanz eines Datentyps erstellt. Damit beginnt quasi das «Leben» eines Objekts:
 >
@@ -342,6 +351,7 @@ Geheimagent geheimagent7 = new Geheimagent()
 ```
 
 ## Konstruktoren UML
+Inhalt von: Files PR 4204 und LA 4205
 
 * "+" = public
 * Variabelname: Datentyp
@@ -349,6 +359,7 @@ Geheimagent geheimagent7 = new Geheimagent()
 ![](assets/20221101_220115_image.png)
 
 ## Vererbung
+Inhalt von: Files PR 4206 und LA 4208 & 4218
 
 > Die Vererbung ermöglicht das Deklarieren neuer Klassen, welche bestehende Klassen wiederverwenden, erweitern, verbessern.
 
@@ -419,6 +430,7 @@ Fahrzeug, Geheimagent, Console oder DateTime sind alles Subklassen von Object.
 In der Klasse System.Object sind einige Methoden definiert, welche durch die (implizite) Vererbung an alle anderen Klassen weitergegeben werden. Dazu zählen: .ToString() , .GetType() etc.
 
 ## Collections
+Inhalt von: Files PR 4207 und LA 4210-4211
 
 > Collections sind wie Array, aber flexibler. Sie haben eine flexible länge. Bei einer Collection können Sie zur Laufzeit neue Elemente einfügen (am Ende oder mittendrin) oder Elemente rauslöschen, ohne dass dabei leere Stellen entstehen. Es gibt verschieden Arten von collections: List, Dictionary, Queue etc.
 
@@ -453,6 +465,7 @@ string[1] = «rosa»;
 ```
 
 ## Assoziatonen
+Inhalt von: Files PR 4207 und LA 4210-4211
 
 Schritt 1: Hier weiss man nur, dass diese sich kennen
 
@@ -507,6 +520,7 @@ Der/die Lernende kann auch einem anderen Schulklassen-Objekt zugeordnet werden.
 ![](assets/20221101_231400_image.png)
 
 ## Polymorphus
+Inhalt von: Files PR 4208 und LA 4212
 
 > Ein Flugzeug IS-A Fahrzeug. Der Flugzeug kann alles, was ein Fahrzeug kann (und mehr). Ein Auto IS-A Fahrzeug, etc.
 >
@@ -573,6 +587,7 @@ public void GameLoop()
 ```
 
 ## UML Sequnezdiagramme
+Inhalt von: Files PR 4210 und LA 4216
 
 > Sequenzdiagramme gehören zur Gruppe den Interaktionsdiagrammen und zeigen als solche, wie Komponenten zusammenarbeiten. Mit Sequenzdiagrammen werden Ausschnitte aus dem Programmablauf dokumentiert (nicht bzw. sehr selten das gesamte Programm). Sie zeigen wichtige oder komplexe Abläufe, die ohne eine zusätzliche grafische Hilfestellung schwer zu verstehen wären. Sequenzdiagramme arbeiten mit Objekten und sind darum eine gute Ergänzung zu den Klassendiagrammen.
 
